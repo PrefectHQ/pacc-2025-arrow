@@ -1,8 +1,8 @@
 from prefect import flow, task
 import pandas as pd
-from prefect_gcp.cloud_storage import GCSBucket
+from prefect_aws import S3Bucket
 
-# install module with: pip install prefect-gcp
+# install module with: pip install prefect-aws
 # register block type
 # create block
 
@@ -13,7 +13,7 @@ def my_task():
     return df
 
 
-@flow(result_storage=GCSBucket.load("my-bucket-block"))
+@flow(result_storage=S3Bucket.load("s3-bucket-block"))
 def my_flow():
     df = my_task()
 
