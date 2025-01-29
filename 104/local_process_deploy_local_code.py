@@ -14,5 +14,5 @@ if __name__ == "__main__":
         entrypoint="local_process_deploy_local_code.py:my_flow",
     ).deploy(
         name="pacc-local-process-deploy-local-code",
-        work_pool_name="pacc-process-pool",
+        work_pool_name="pacc-process-pool",  # must create pool first
     )

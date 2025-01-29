@@ -1,6 +1,8 @@
 import httpx
 from prefect import flow
 
+# will fail if you can't access the APIs below
+
 
 @flow
 def fetch_cat_fact():

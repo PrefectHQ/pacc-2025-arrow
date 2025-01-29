@@ -6,8 +6,8 @@ from prefect.deployments import run_deployment
 def run_deployment_from_flow():
     print("Running deployment from a flow")
     run_deployment(
-        name="pipeline/my-deployment",
-        parameters={"lat": 1, "lon": 2},  # must create deployment first
+        name="pipeline/my-deployment",  # must create deployment first
+        parameters={"lat": 1, "lon": 2},
     )
     return
 
