@@ -17,7 +17,7 @@ downstream_deployment_trigger = DeploymentEventTrigger(
 
 if __name__ == "__main__":
     downstream_flow.from_source(
-        source="https://github.com/prefecthq/pacc-2024-v3.git",
+        source="https://github.com/prefecthq/pacc-2025-arrow.git",
         entrypoint="105/dep-trigger.py:downstream_flow",
     ).deploy(
         name="ticker-deploy",
