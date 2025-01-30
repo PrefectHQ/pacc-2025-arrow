@@ -62,3 +62,6 @@ Dockerfile
 
 # prefect.yaml
 prefect.yaml
+
+# CSV files
+*.csv
