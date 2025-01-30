@@ -2,12 +2,12 @@ from prefect import flow
 from prefect.deployments import run_deployment
 
 
-@flow
+@flow(log_prints=True)
 def run_deployment_from_flow():
     print("Running deployment from a flow")
     run_deployment(
-        name="pipeline/my-deployment",  # must create deployment first
-        parameters={"lat": 1, "lon": 2},
+        name="my-flow/pacc-local-process-deploy-local-code",  # must create deployment first
+        parameters={"name": "Hello, my name is ____"},
     )
     return
 
