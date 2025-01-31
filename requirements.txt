@@ -63,7 +63,8 @@ orjson==3.10.15
 packaging==24.2
 pandas==2.2.3
 pathspec==0.12.1
-pendulum==3.0.0
+pendulum < 3.0; python_version < '3.12'
+pendulum >= 3.0.0, <4; python_version >= '3.12'
 prefect==2.20.9
 prefect-aws==0.4.20
 prometheus-client==0.21.1
